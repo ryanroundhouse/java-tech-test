@@ -11,7 +11,7 @@ The Cell Phone field on Move-In orders uses the format specified by VALPHONEFORM
 
 ## Current classes with reference to VALPHONEFORMAT
 
-care/callmaintenance:
+care/
     CallMaintenanceModel.java
     MoveInInfoModel.java
     MoveInModel.java
