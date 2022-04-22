@@ -1,3 +1,11 @@
+package care;
+
+import care.supportingClasses.AbstractFormModel;
+import care.supportingClasses.KeyValueCache;
+import care.supportingClasses.PhoneNumber;
+import care.supportingClasses.StringUtils;
+import care.supportingClasses.ValidationInfo;
+
 public class MoveInInfoModel extends AbstractFormModel {
     // ...
 

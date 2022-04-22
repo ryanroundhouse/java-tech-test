@@ -1,3 +1,15 @@
+package care;
+
+import java.util.List;
+
+import care.supportingClasses.AbstractFormModel;
+import care.supportingClasses.CareAccountsHolder;
+import care.supportingClasses.KeyValueCache;
+import care.supportingClasses.MoveInInfo;
+import care.supportingClasses.PhoneNumber;
+import care.supportingClasses.StringUtils;
+import care.supportingClasses.ValidationInfo;
+
 public class MoveInModel extends AbstractFormModel {
     // ...
 
@@ -30,14 +42,15 @@ public class MoveInModel extends AbstractFormModel {
         return finalNumber;
     }
 
-    public boolean save(List<MoveInInfo> moveInInfo){
+    public boolean save(List<MoveInInfo> moveInInfo) {
         // ...
-        foreach (MoveInInfo info : moveInInfo){
-            if (!validate(info.name)){
+        for (MoveInInfo info : moveInInfo) {
+            if (!validate(info.name)) {
                 return false;
             }
         }
         // ...
+        return true;
     }
 
     public boolean validate(String harrisname) {
@@ -70,7 +83,12 @@ public class MoveInModel extends AbstractFormModel {
 
         return passed;
     }
-}
 
-// ...
+    private CareAccountsHolder getCareAccountsHolder() {
+        return new CareAccountsHolder();
+    }
+
+    private void registerError(String harrisname, String string) {
+    }
+    // ...
 }

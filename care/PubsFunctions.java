@@ -1,3 +1,8 @@
+package care;
+
+import care.supportingClasses.StringUtils;
+import care.supportingClasses.ValidationInfo;
+
 public class PubsFunctions {
 
     /**
